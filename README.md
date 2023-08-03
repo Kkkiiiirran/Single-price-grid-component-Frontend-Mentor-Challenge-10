@@ -18,7 +18,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 ### Links
 
 - Solution URL: [solution](https://github.com/Kkkiiiirran/Single-price-grid-component-Frontend-Mentor-Challenge-10)
-- Live Site URL: [live site](https://kkkiiiirran.github.io/Four-Card-Feature-Section/)
+- Live Site URL: [live site](https://kkkiiiirran.github.io/Single-price-grid-component-Frontend-Mentor-Challenge-10/)
 
 
 ### Built with
