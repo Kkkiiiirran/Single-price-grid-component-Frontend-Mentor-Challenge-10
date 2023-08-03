@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+:root {
+
+    --primary-clr: hsl(179, 62%, 43%);
+    --secondary-clr:  hsl(71, 73%, 54%);
+    --primary-text-clr: hsl(218, 22%, 67%);
+    --secondary-text-clr: hsl(204, 43%, 93%);
+    --text-clr: hsla(203, 44%, 93%, 0.676);
+
+    --fs-400: 4rem;
+    --fs-350: 3.5rem;
+    --fs-300: 3rem;
+    --fs-200: 2rem;
+    --fs-250:2.5rem;
+    --fs-200: 2rem;
+    --fs-150: 1.5rem;
+    --fs-100: 1rem;
+    --fs-50: .5rem;
+
+    --fw-regular: 400;
+    --fw-bold: 600;
+    --fw-black: 700;
+
+    --font-family-default: 'Karla', sans-serif;
+
+    --gap-smallest: .5rem;
+    --gap-small: 1rem;
+    --gap-medium:1.5rem;
+    --gap-large: 2rem;
+}
+
+
+
+* {
+    font: inherit;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img, svg {
+    display: block;
+    width: 100%;
+}
+
+.grid-flow {
+    display: grid;
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+body {
+    font-family: var(--font-family-default);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-regular);
+    color: white;
+    background-color: var(--secondary-text-clr);
+    place-items: center;
+    height: 100vh;
+    
+}
+
+.main-container {
+    max-width: 26rem;
+    margin: 2rem;
+}
+
+.container {
+    padding: 2rem;
+    gap: var(--gap-medium);
+    background-color: var(--primary-clr);
+}
+
+h2 {
+    font-size: var(--fs-150);
+    font-weight: var(--fw-bold);
+}
+
+.container-1 {
+    background-color: white;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.container-1 h1 {
+    color: var(--primary-clr);
+    font-size: 1.75rem;
+    font-weight: var(--fw-bold);
+}
+
+.container-1 h2 {
+    color: var(--secondary-clr);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+
+.container-1 p {
+    color: var(--primary-text-clr);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.container-2 h1 {
+    font-size: var(--fs-350);
+    font-weight: var(--fw-bold);
+}
+
+span {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-regular);
+    color:  var(--text-clr);
+}
+
+.container-2 p {
+    font-size: 1.25rem;
+    color: var(--secondary-text-clr);
+    line-height: 2;
+}
+
+button {
+    border: none;
+    border-radius: .5rem;
+    padding: 1.25rem 2rem;
+    font-size: 1.25rem;
+    background-color: var(--secondary-clr);
+    color: white;
+    font-weight: var(--fw-bold);
+}
+
+.container-3 {
+    background-color: hsl(179, 48%, 51%);
+}
+
+.container-3 h3 {
+    color: hsla(203, 44%, 93%, 0.874);
+    line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+    .main-container {
+        max-width: 50vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .container {
+        padding: 3rem;
+    }
+    .container-1 {
+       grid-column: span 2;
+    }
+
+
+    
+}
+
